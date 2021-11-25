@@ -111,7 +111,7 @@ public class GameState {
                                 GameIO.logOutput(i + ". " + mortgagable.get(i) + " with a mortgage price of "
                                         + mortgagable.get(i).getMortgagePrice() + ".");
                             }
-                            GameIO.logOutput("Enter the number of the property you want to build a house on.");
+                            GameIO.logOutput("Enter the number of the property you want to mortgage.");
                             int index = Integer.valueOf(GameIO.readInput());
                             if (index >= mortgagable.size()) {
                                 GameIO.logOutput("Invalid input.");
