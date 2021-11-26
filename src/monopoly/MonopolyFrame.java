@@ -42,7 +42,11 @@ public class MonopolyFrame implements Runnable{
         layeredPane = new JLayeredPane();
 
         boardImage = new JLabel();
-        boardImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/mono600_2.png")));
+        try{
+            boardImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/mono600_2.png")));
+        }catch(Exception e){
+            System.out.println("Error loading image");
+        }
 
         logPane = new JScrollPane();
         logTextArea = new JTextArea();
